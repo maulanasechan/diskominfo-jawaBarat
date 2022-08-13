@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import AddData from "./pages/addData/AddData";
 import Submission from "./pages/submission/Submission";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<AddData />} />
         <Route path="/submissions" element={<Submission />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
