@@ -16,7 +16,7 @@ const Submission = () => {
       icon: "success",
       button: "Oke",
     }).then(function () {
-      navigate("/disna");
+      navigate("/");
     });
   };
 
