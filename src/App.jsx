@@ -6,8 +6,8 @@ const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<AddData />} />
-        <Route path="/submissions" element={<Submission />} />
+        <Route path="/" exact element={<AddData />} />
+        <Route path="/submissions" exact element={<Submission />} />
       </Routes>
     </HashRouter>
   );
