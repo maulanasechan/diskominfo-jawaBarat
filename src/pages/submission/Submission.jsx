@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import { useLocation } from "react-router-dom";
 import "./submission.css";
 
 const Submission = () => {
   const { state } = useLocation();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,7 +16,7 @@ const Submission = () => {
       icon: "success",
       button: "Oke",
     }).then(function () {
-      window.location = "/";
+      navigate("/");
     });
   };
 
