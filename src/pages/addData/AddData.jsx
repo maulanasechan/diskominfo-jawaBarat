@@ -23,7 +23,7 @@ const AddData = () => {
 
   // selector setup
   useEffect(() => {
-    fetch(`http://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
+    fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
       .then((res) => res.json())
       .then((json) => {
         setProvincies(json);
@@ -37,7 +37,7 @@ const AddData = () => {
       setKelurahan(value[1]);
     } else {
       fetch(
-        `http://www.emsifa.com/api-wilayah-indonesia/api/${e.target.id}/${value[0]}.json`
+        `https://www.emsifa.com/api-wilayah-indonesia/api/${e.target.id}/${value[0]}.json`
       )
         .then((res) => res.json())
         .then((json) => {
